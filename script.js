@@ -51,7 +51,7 @@ function removeGrid(){
 }
 const button = document.querySelector("button")
 button.addEventListener('click',()=>{
-    let gridSize=parseInt(prompt("Enter a number"));
+    let gridSize=Number(prompt("Enter a number"));
     if(gridSize>100||isNaN(gridSize)){
         alert("invalid number");
     }
